@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+
+.body{
+    padding: 0;
+    margin: 0;
+    height: 83.2vh;
+    background: #2A2734;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./pic.jpg) no-repeat center;
+}
+
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+}
+
+.div{
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 0 4px;
+    border-radius: 20px;
+    color: yellow;
+    text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+    animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.quotes{
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    color: blue;
+    /* background-color: rgba(255, 192, 203, 0.288); */
+    /* border: 10px solid sandybrown; */
+}
+
+.quotes p, .quote h3{
+    font-size: 1.5rem;
+}
+
+@media(max-width: 480px){
+    .quotes p, .quote h3{
+        font-size: 1rem;
+}}
+.container h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: colorchange 5s infinite alternate;
+}
+@keyframes colorchange{
+    0%{
+        color: indigo;
+    }
+    20%{
+        color: blue;
+    }
+    40%{
+        color: green;
+    }
+    60%{
+        color: yellow;
+    }
+    80%{
+        color: orange;
+    }
+    100%{
+        color: red;
+    }
+}
+
+.btn-info{
+    margin-bottom: 10px;
+}
+
+#author{
+
+    margin-top: 20px;
+    margin-left: 500px;
+    font-size: 1.5rem;
+}
