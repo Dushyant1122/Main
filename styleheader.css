@@ -15,11 +15,23 @@ body {
   font-family: sans-serif;
  
 }
+.logo-self{
+  height: 80px;
+  width: 80px;
+}
+.name-logo{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.name-logo h1{
+  margin-left: 20px;
+}
 
 .logo {
   color: var(--color-primary);
   font-size: 30px;
-  margin-left: -450px;
+  /* margin-left: -550px; */
 }
 
 .logo span {
@@ -106,12 +118,46 @@ body {
 }
 
 @media (max-width: 1024px){
-  .menu-bar ul li a{
-    font-size: 0.8rem;
-  }
-}
 
+.logo {
+  
+  font-size: 1.5rem;
+  }
 .logo-self{
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
+}
+.menu-bar ul li a {
+  font-size: 1rem;
+ 
+}
+}
+@media (max-width: 768px){
+
+.logo {
+  
+  font-size: 1rem;
+  }
+.logo-self{
+  height: 50px;
+  width: 50px;
+}
+.menu-bar ul li a {
+  font-size: 1rem;
+ 
+}
+}
+@media (max-width: 480px){
+
+.logo {
+  
+  display: none;
+  }
+.logo-self{
+  height: 50px;
+  width: 50px;
+}
+.menu-bar ul li a {
+  font-size: .6rem;
+}
 }
